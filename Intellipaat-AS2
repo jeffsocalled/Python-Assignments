@@ -1,0 +1,15 @@
+a=int(input("Enter the value of num1:"))
+b=int(input("Enter the value of num2:"))
+c=int(input("Enter the value of num3:"))
+print("Entered Value of a, b & c are:",a,",",b,"&",c,"respectively")
+if (a > b) and (a > c) :
+    greatest=a
+elif (b > a) and (b > c):
+    greatest=b
+else:
+    if ((a == b) or (b == c)) and (a > c):
+        greatest=b
+    else:
+        greatest=c
+
+print (" The greatest amongst the three numbers is:",greatest)

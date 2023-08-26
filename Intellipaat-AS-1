@@ -1,0 +1,10 @@
+a=int(input("Enter the value of a:"))
+b=int(input("Enter the value of b:"))
+print("Entered Value of a & b are:",a,"&",b,"respectively")
+if a > b:
+    print (a,"(a) is greater than (b)",b)
+elif b>a:
+    print (b,"(b) is greater than (a)",a)
+else:
+    print ("Both a and b are equal")
+

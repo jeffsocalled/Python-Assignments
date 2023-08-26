@@ -1,0 +1,36 @@
+t1=(10,20,30)
+t2=(40,50,60)
+t_combine=t1+t2
+t_combine=3*(t_combine)
+print(t_combine)
+print(t_combine[2]) # To print 3rd element
+print(t_combine[0:3])    #To print first 3 elements
+print(t_combine[-3:])    #To print last 3 elements
+
+#Q2
+e1=(1,2,3)
+e2=("a","b","c")
+e3=("True","False")
+my_list=[e1,e2,e3]
+print(my_list)
+
+#Q3
+nt=(1,'a',True)
+my_list.append(nt)
+print(my_list)
+
+#Q4
+my_dict={
+    "Fruit":("Apple", "Banana", "Mango", "Guava"),
+    "Cost":(85,54,120,70),
+}
+print(my_dict.keys())
+print(my_dict.values())
+
+#Q5
+
+my_set={1,1,'a','a',True,True}
+new_set={True,False}
+print(my_set)
+print(new_set)
+

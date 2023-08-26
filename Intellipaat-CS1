@@ -1,0 +1,47 @@
+#Q1
+squares=[i*i for i in range(10)]
+print(squares)
+#Q2
+def check(year):
+    if (year%4 ==0):
+        print(year,"is a Leap Year")
+    else:
+        print(year,"is an Ordinary Year")
+check(2021)
+
+#Q3
+def take_ary():
+    try:
+        ary=[]
+        while True:
+            ary.append(int(input('Enter the number to add in array:')))
+    except:
+        print('Input array is:\n',ary)
+    newary=[]
+    for x in ary:
+        if(x%2 ==0):
+            newary.append(x)
+    print('New array is',newary)
+
+#take_ary()
+
+
+#Q4
+def get_ary():
+    try:
+        ary=[]
+        while True:
+            ary.append(int(input('Enter the number to add in array:')))
+    except:
+        print('Input array is:\n',ary)
+    return ary
+
+print("ARRAY 1")
+ary1=get_ary()
+print("ARRAY 2")
+ary2=get_ary()
+result=[]
+for x in ary1:
+    if(x in ary2):
+        result.append(x)
+print("Elements of array 1 that are present in array 2",result)
